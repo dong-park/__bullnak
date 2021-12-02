@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
+import moment from 'moment'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(router)
+app.use(moment)
+app.mount('#app')
